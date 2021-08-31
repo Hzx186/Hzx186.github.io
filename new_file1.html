@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 800px; height: 800px;
+				margin: 50px auto;
+				position: relative;
+				animation: a 20s infinite linear;
+			}
+			img:nth-child(2){
+				position: absolute;
+				top: 50px;left: 400px;
+				transform-origin: center top;
+				animation: b 20s infinite linear;
+				
+				
+			}
+			img:nth-child(3){
+				position: absolute;
+				top: 620px;left: 500px;
+				transform-origin: center top;
+				
+			}
+			img:nth-child(4){
+				position: absolute;
+				top: 400px;left: 0px;
+				transform-origin: center top;
+				
+			}
+			@keyframes a{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+				transform-origin: center top;
+				animation: a 8s infinite linear;
+			}
+			@keyframes b{
+				from{transform: rotate(360deg);}
+				to{transform: rotate(0deg);}
+				transform-origin: center top;
+				animation: a 8s infinite linear;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/fsw.png"/>
+			<img src="img/boy.png"/>
+			<img src="img/girl.png"/>
+			<img src="img/shamegirl.png"/>
+		</div>
+	</body>
+</html>
